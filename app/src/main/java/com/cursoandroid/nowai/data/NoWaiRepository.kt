@@ -1,4 +1,4 @@
-package com.cursoandroid.nowai
+package com.cursoandroid.nowai.data
 
 import kotlinx.coroutines.flow.Flow
 

@@ -1,4 +1,4 @@
-package com.cursoandroid.nowai
+package com.cursoandroid.nowai.data
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
@@ -27,7 +27,7 @@ data class Category(
     indices = [Index("categoryId")]
 )
 
-data class Entities(
+data class Item(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val title: String,
     val type: ItemType,
@@ -38,5 +38,4 @@ data class Entities(
     val lastDoneAt: Long? = null,        // epoch millis
     val nextDueAt: Long? = null,         // epoch millis
     val createdAt: Long = System.currentTimeMillis()
-
 )

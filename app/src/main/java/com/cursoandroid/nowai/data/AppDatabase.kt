@@ -1,7 +1,10 @@
-package com.cursoandroid.nowai
+package com.cursoandroid.nowai.data
 
 import android.content.Context
-import androidx.room.*
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 
 @Database(entities = [Category::class, Item::class], version = 1, exportSchema = false)
 @TypeConverters(Converters::class)
